@@ -1,0 +1,11 @@
+E:\RiderProjects\LSB_GUI\bin\Debug\LSB_GUI.exe.config
+E:\RiderProjects\LSB_GUI\bin\Debug\LSB_GUI.exe
+E:\RiderProjects\LSB_GUI\bin\Debug\LSB_GUI.pdb
+E:\RiderProjects\LSB_GUI\obj\Debug\LSB_GUI.csprojAssemblyReference.cache
+E:\RiderProjects\LSB_GUI\obj\Debug\LSB_GUI.Properties.Resources.resources
+E:\RiderProjects\LSB_GUI\obj\Debug\LSB_GUI.csproj.GenerateResource.cache
+E:\RiderProjects\LSB_GUI\obj\Debug\LSB_GUI.csproj.CoreCompileInputs.cache
+E:\RiderProjects\LSB_GUI\obj\Debug\LSB_GUI.exe
+E:\RiderProjects\LSB_GUI\obj\Debug\LSB_GUI.pdb
+E:\RiderProjects\LSB_GUI\obj\Debug\LSB_GUI.Form1.resources
+E:\RiderProjects\LSB_GUI\obj\Debug\LSB_GUI.Form2.resources

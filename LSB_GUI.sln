@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSB_GUI", "LSB_GUI.csproj", "{ADABDDC0-3657-4DA9-ADC2-CC1D2D82F6CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADABDDC0-3657-4DA9-ADC2-CC1D2D82F6CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADABDDC0-3657-4DA9-ADC2-CC1D2D82F6CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADABDDC0-3657-4DA9-ADC2-CC1D2D82F6CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADABDDC0-3657-4DA9-ADC2-CC1D2D82F6CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
