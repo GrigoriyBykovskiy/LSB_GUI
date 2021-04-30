@@ -15,6 +15,11 @@ namespace LSB_GUI
                 throw new Exception("Размер контейнера слишком мал, сэмпай!");
             }
 
+            if (Container.InfoHeader.biBitCount != 24)
+            {
+                throw new Exception("Тип файла не поддерживается, сэмпай!");
+            }
+
             int count = 0;
             for (int row = 0; row < Container.InfoHeader.biHeight; row++)
             {
@@ -42,7 +47,7 @@ namespace LSB_GUI
             BITMAPFILEHEADER buffer = Container.FileHeader;
             buffer.bfSize = Message.Size;
             Container.FileHeader = buffer;
-            Container.PutDataToFile("E:/RiderProjects/LSB_GUI/output.bmp");
+            Container.PutDataToFile(Directory.GetCurrentDirectory() + "/" + Path.GetExtension(Message.PathFile).Replace(".","") + ".bmp");
         }
 
         public void Decrypt(BMPImage Container)
@@ -82,7 +87,7 @@ namespace LSB_GUI
                 arr[i / 8] = bv;
                 count_tmp++;
             }
-            using (BinaryWriter writer = new BinaryWriter(File.Open("E:/RiderProjects/LSB_GUI/output.txt", FileMode.Create)))
+            using (BinaryWriter writer = new BinaryWriter(File.Open(Directory.GetCurrentDirectory() + "/"+  "output." + Path.GetFileNameWithoutExtension(Container.PathFile), FileMode.Create)))
             {
                 writer.Write(arr, 0, arr.Length);
             }

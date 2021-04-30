@@ -6,6 +6,7 @@ namespace LSB_GUI
 {
     public class MessageFile
     {
+        public string PathFile;
         public UInt32 Size = 0;
         public byte[] MessageData;
         public StringBuilder Data = new StringBuilder();
@@ -15,6 +16,7 @@ namespace LSB_GUI
             MessageData = File.ReadAllBytes(pathFile);
             InitData();
             InitSize();
+            InitPathFile(pathFile);
         }
 
         public void InitData()
@@ -26,6 +28,11 @@ namespace LSB_GUI
         public void InitSize()
         {
             Size = (UInt32)MessageData.Length * 8;
+        }
+
+        public void InitPathFile(string path)
+        {
+            PathFile = path;
         }
     }
 }

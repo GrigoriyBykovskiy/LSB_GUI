@@ -40,6 +40,7 @@ namespace LSB_GUI
     }
     public class BMPImage
     {
+        public string PathFile;
         public BITMAPFILEHEADER FileHeader;
         public BITMAPINFOHEADER InfoHeader;
         public int Padding = 0;
@@ -48,6 +49,11 @@ namespace LSB_GUI
         public void InitPadding()
         {
             Padding = InfoHeader.biWidth % 4;
+        }
+        
+        public void InitPathFile(string path)
+        {
+            PathFile = path;
         }
 
         public void GetDataFromFile(string pathFile)
@@ -86,6 +92,7 @@ namespace LSB_GUI
                 }
             }
             InitPadding();
+            InitPathFile(pathFile);
         }
 
         public void PutDataToFile(string pathFile)

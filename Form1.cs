@@ -113,12 +113,11 @@ namespace LSB_GUI
             }
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e) // work with stat chars
         {
             InitializeComponent();
             var form2 = new Form2(this);
             form2.Show();
-            //throw new System.NotImplementedException();
         }
     }
 }
