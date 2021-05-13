@@ -29,7 +29,7 @@ namespace LSB_GUI
             
             var messageDataLength = new StringBuilder();
             foreach (byte b in BitConverter.GetBytes(Message.Size))
-                messageDataLength.Insert(0, Convert.ToString(b, 2));
+                messageDataLength.Insert(0, Convert.ToString(b, 2).PadLeft(8, '0'));
             
             while (messageDataLength.Length % 32 != 0)
             {
